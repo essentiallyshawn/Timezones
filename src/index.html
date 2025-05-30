@@ -1,0 +1,43 @@
+<div class="widget">
+  <div class="header">Timezones</div>
+  <div class="row">
+    <select id="from-select" class="location-select"></select>
+    <button id="switch-btn" class="switch-btn" title="Switch">
+      &#8596;
+    </button>
+    <select id="to-select" class="location-select"></select>
+  </div>
+
+  <div class="time-bar">
+    <div class="timebar-row">
+      <span id="from-time-label" class="time-label"></span>
+      <button id="calendar-trigger" class="calendar-trigger">&#128197;</button>
+    </div>
+    <div class="slider-row">
+      <div class="slider-wrap">
+        <div class="slider-bg"></div>
+        <input type="range" id="from-slider" class="slider" min="0" max="47" step="1">
+        <div class="slider-submarks" id="from-submarks"></div>
+        <div class="slider-marks" id="from-marks"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="time-bar">
+    <div class="timebar-row">
+      <span id="to-time-label" class="time-label"></span>
+    </div>
+    <div class="slider-row">
+      <div class="slider-wrap">
+        <div class="slider-bg"></div>
+        <input type="range" id="to-slider" class="slider" min="0" max="47" step="1">
+        <div class="slider-submarks" id="to-submarks"></div>
+        <div class="slider-marks" id="to-marks"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="difference-label" class="difference"></div>
+</div>
+<!-- Calendar popup (hidden by default) -->
+<div class="calendar-popup" id="calendar-popup" style="display:none"></div>
